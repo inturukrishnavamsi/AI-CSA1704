@@ -1,0 +1,5 @@
+takes(bhargav, csa1179).
+takes(bhargav, csa1510).
+takes(sarvananMs,csa1179 ).
+takes(anbazaghan, csa1510).
+classmates(X, Y) :- takes(X, Z), takes(Y, Z).
