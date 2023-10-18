@@ -1,0 +1,14 @@
+dob(ram, date(2002, 5, 15)).
+dob(ravi, date(205, 10, 20)).
+dob(lakshmi, date(2004, 2, 8)).
+dob(sneha, date(2000, 7, 3)).
+dob(tarak, date(2005, 9, 25)).
+dob(sri, date(2002,8,9)).
+dob(sonu, date(2003,2,22)).
+dob(ali, date(2000,7,2)).
+
+get_dob(Name, DOB) :-
+    dob(Name, DOB).
+
+same_month_birthday(Month, People) :-
+    findall(Name, (dob(Name, date(_, Month, _))), People).
